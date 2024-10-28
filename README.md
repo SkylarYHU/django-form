@@ -9,7 +9,7 @@ This Django project includes a simple contact form allowing users to submit thei
 - **contact_success_view**: Confirms successful form submissions.
 
 ## Screenshots
-[!Screenshot1](Screenshots/screenshot1)
-[!Screenshot2](Screenshots/screenshot2)
-[!Screenshot3](Screenshots/screenshot3)
+![Screenshot1](Screenshots/screenshot1)
+![Screenshot2](Screenshots/screenshot2)
+![Screenshot3](Screenshots/screenshot3)
 
