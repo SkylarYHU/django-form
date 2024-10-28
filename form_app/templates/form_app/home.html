@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+  <div class="centered-content">
+    <img class="logo" src="{% static "images/forms.png" %}" alt="">
+    <!--该属性指定表单数据提交的目标 URL。当用户提交表单时，数据会发送到这个 URL-->
+    <form action="{% url "contact" %}" method="get">
+      {% csrf_token %}
+      <button class="btn" type="submit">Click to enter form</button>
+    </form>
+  </div>
+</body>
+</html>

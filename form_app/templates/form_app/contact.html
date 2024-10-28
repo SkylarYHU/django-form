@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+  <div class='centered-content'>
+  <h1>Contact Us</h1>
+  <form method="POST">
+    {% csrf_token %}
+    <!-- 用于将表单渲染成 HTML 页面上带有段落标签（<p>）的格式 -->
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </div>
+  </form>
+</body>
+</html>

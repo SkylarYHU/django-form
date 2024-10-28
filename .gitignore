@@ -1,0 +1,21 @@
+# Python相关忽略文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 环境变量文件
+.env
+*.env
+
+# Django迁移文件
+*/migrations/
+
+# 虚拟环境
+venv/
+ENV/
+env/
+.venv/
+.virtualenv/
+
+# 数据库文件
+db.
